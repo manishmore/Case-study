@@ -7,7 +7,7 @@ LABEL maintainer="manish.more64@gmail.com"
 RUN mkdir /usr/src/app
 
 # Clone our private GitHub Repository
-RUN git clone -b master https://github.com/manishmore/emoji-search.git /emoji-search/
+RUN git clone https://github.com/manishmore/emoji-search.git /emoji-search/
 RUN cp -R /emoji-search/* /usr/src/app
 
 # add `/usr/src/app/node_modules/.bin` to $PATH

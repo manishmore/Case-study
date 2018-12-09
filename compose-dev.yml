@@ -2,14 +2,13 @@ version: '3.5'
 
 services:
 
-  emoji-search:
-    container_name: emoji-search
+  app-web:
+    container_name: app-web
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
       - '.:/usr/src/app'
-      - '/usr/src/app/node_modules'
     ports:
       - '3000:3000'
     environment:

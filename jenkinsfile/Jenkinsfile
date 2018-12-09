@@ -1,21 +1,21 @@
 pipeline {
   agent any
   stages {
-    stage ('Building') {
+    stage ('Initialize') {
       steps {
-        sh 'Building'
+        echo "Placeholder"
       }
     }
 
     stage ('dockerization-test') {
       steps {
-        sh 'test Dockerfile-dry run'
+        echo 'test Dockerfile-dry run'
       }
     }
 
     stage ('build-dockerization') {
       steps {
-        sh 'build Dockerfile'
+        echo 'docker run --name name -p 3000:3000'
       }
     }
   }
