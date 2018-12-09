@@ -1,6 +1,8 @@
 # base image
 FROM node:9.6.1
 
+LABEL maintainer="manish.more64@gmail.com"
+
 # set working directory
 RUN mkdir /usr/src/app
 

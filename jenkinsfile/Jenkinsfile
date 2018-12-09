@@ -1,0 +1,22 @@
+pipeline {
+
+  stages {
+    stage ('Building') {
+      steps {
+        sh 'Building'
+      }
+    }
+
+    stage ('dockerization-test') {
+      steps {
+        sh 'test Dockerfile-dry run'
+      }
+    }
+
+    stage ('build-dockerization') {
+      steps {
+        sh 'build Dockerfile'
+      }
+    }
+  }
+}
